@@ -25,6 +25,7 @@ applications for Android and iOS from a single codebase.
 | Week     | Topic               | Description |
 |----------|---------------------|-------------|
 | [Week 1](./Week1_HelloFlutter) | Environment Setup & First App | Set up the Flutter development environment, learned Dart basics (variables, null safety, functions, OOP), core Flutter widgets, and built/ran a first Flutter app on an Android emulator. |
+| [Week 2](./Week2_ProfileScreen) | Widgets & Layouts | Built a fully functional Profile Screen UI using Container, Row, Column, Expanded, ListView, and ElevatedButton — applying core Flutter layout widgets, custom asset images, and card-style theming. |
 
 *(This table will be updated weekly as new projects are added.)*
 
