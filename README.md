@@ -20,6 +20,23 @@ applications for Android and iOS from a single codebase.
 - **IDE:** Visual Studio Code / Android Studio
 - **Version Control:** Git & GitHub
 
+## 📂 Weekly Projects
+
+| Week     | Topic               | Description |
+|----------|---------------------|-------------|
+| [Week 1](./Week1_HelloFlutter) | Environment Setup & First App | Set up the Flutter development environment, learned Dart basics (variables, null safety, functions, OOP), core Flutter widgets, and built/ran a first Flutter app on an Android emulator. |
+
+*(This table will be updated weekly as new projects are added.)*
+
+## 🚀 Getting Started
+
+To run any project in this repository:
+
+```bash
+cd WeekX_ProjectName
+flutter pub get
+flutter run
+```
 
 ## 📌 Note
 
