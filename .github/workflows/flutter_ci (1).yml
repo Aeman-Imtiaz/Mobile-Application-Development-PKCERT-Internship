@@ -26,6 +26,11 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
+      - name: Create dummy api_key.dart (real key is gitignored, not present in CI)
+        run: |
+          mkdir -p lib/config
+          echo 'const String geminiApiKey = "dummy-key-for-ci";' > lib/config/api_key.dart
+
       - name: Analyze code
         run: flutter analyze
 
