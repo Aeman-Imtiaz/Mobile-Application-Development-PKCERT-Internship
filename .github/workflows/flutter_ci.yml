@@ -1,0 +1,39 @@
+name: Flutter CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    # Your Flutter project lives inside the "Week 4-6_SpendWise" subfolder,
+    # not at the repo root — so every step below runs from there.
+    defaults:
+      run:
+        working-directory: "Week 4-6_SpendWise"
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Analyze code
+        run: flutter analyze
+
+      - name: Run tests
+        run: flutter test
+
+      # NOTE: Building the actual APK is intentionally left out here.
+      # google-services.json and lib/config/api_key.dart are gitignored
+      # (correctly, for security), so a full `flutter build apk` would fail
+      # in CI without them. Analyze + test already give you real value:
+      # every push is checked for errors and broken tests automatically.
